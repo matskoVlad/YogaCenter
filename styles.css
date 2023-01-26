@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Heebo&family=Merienda+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Heebo&family=Inter&family=Merienda+One&display=swap");
 html {
   scroll-behavior: smooth;
 }
@@ -22,14 +22,15 @@ header .container {
   padding-top: 2%;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 10% 1fr 30%;
-      grid-template-columns: 10% 1fr 30%;
+  -ms-grid-columns: 10% 1fr 39.75%;
+      grid-template-columns: 10% 1fr 39.75%;
 }
 
 header .container nav {
   -ms-grid-column: 3;
   -ms-grid-column-span: 1;
   grid-column: 3/4;
+  padding-top: 1%;
 }
 
 header .container nav ul {
@@ -37,8 +38,8 @@ header .container nav ul {
   display: grid;
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
-  -webkit-column-gap: 10%;
-          column-gap: 10%;
+  -webkit-column-gap: 24%;
+          column-gap: 24%;
 }
 
 header .container nav ul li {
@@ -56,17 +57,17 @@ header .container nav ul li a {
 }
 
 main .about {
-  padding-top: 10%;
+  padding-top: 8%;
   background: #5ED4BF;
 }
 
 main .about .container {
-  padding-bottom: 25%;
-  background: url(assets/girlyoga.png) no-repeat 69% 100%, url(assets/fon.png) no-repeat 47% 100%;
+  padding-bottom: 25.5%;
+  background: url(assets/girlyoga.png) no-repeat 72% 100%, url(assets/fon.png) no-repeat 43% 100%;
 }
 
 main .about .container h1 {
-  margin-bottom: 5%;
+  margin-bottom: 3%;
   font-family: 'Merienda One';
   font-style: normal;
   font-weight: 400;
@@ -86,5 +87,266 @@ main .about .container p {
   line-height: 130%;
   text-align: center;
   color: rgba(0, 0, 0, 0.5);
+}
+
+main .features .container {
+  padding-top: 6%;
+  padding-bottom: 9%;
+  background: url(assets/BoyYoga.png) no-repeat 88.5% 8%, url(assets/Girl.png) no-repeat 8% 100%;
+}
+
+main .features .container ul li {
+  list-style-image: url(assets/leafIconYoga.svg);
+  font-family: 'Heebo';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 140%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: justify;
+  color: #595959;
+}
+
+main .features .container .top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+
+main .features .container .top h2 {
+  margin-bottom: 2%;
+  font-family: 'Merienda One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 35px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+main .features .container .top ul {
+  padding-left: 4%;
+}
+
+main .features .container .top ul li {
+  max-width: 681px;
+}
+
+main .features .container .top ul li:not(:last-child) {
+  margin-bottom: 5%;
+}
+
+main .features .container .bottom {
+  margin-top: 7.5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+main .features .container .bottom ul li {
+  max-width: 746px;
+}
+
+main .features .container .bottom ul li:not(:last-child) {
+  margin-bottom: 4.5%;
+}
+
+main .info {
+  background: #DDF2EF;
+}
+
+main .info .bg {
+  padding-bottom: 6.5%;
+  background: url(assets/Mandala.png) no-repeat 100% 150%;
+}
+
+main .info .bg .container {
+  padding-top: 6.5%;
+}
+
+main .info .bg .container .prices .cards {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -webkit-column-gap: 12%;
+          column-gap: 12%;
+}
+
+main .info .bg .container .prices .cards__item {
+  border: 1px solid #000000;
+  -webkit-box-shadow: 0px 0px 35px -7px rgba(0, 0, 0, 0.65);
+          box-shadow: 0px 0px 35px -7px rgba(0, 0, 0, 0.65);
+  border-radius: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .info .bg .container .prices .cards__item .text {
+  border-radius: 25px 25px 0px 0px;
+  background: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 20%;
+}
+
+main .info .bg .container .prices .cards__item .text img {
+  margin-top: 17%;
+}
+
+main .info .bg .container .prices .cards__item .text h3 {
+  margin-top: 12%;
+  font-family: 'Heebo';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 35px;
+  text-align: center;
+  color: #000000;
+}
+
+main .info .bg .container .prices .cards__item .text p {
+  margin-top: 3%;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #000000;
+}
+
+main .info .bg .container .prices .cards__item .price {
+  padding-top: 10%;
+  padding-bottom: 10%;
+  border-radius: 0px 0px 25px 25px;
+  background: #5ED4BF;
+}
+
+main .info .bg .container .prices .cards__item .price p {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  -webkit-font-feature-settings: 'ss01' on;
+          font-feature-settings: 'ss01' on;
+  color: #FFFFFF;
+}
+
+main .info .bg .container .location {
+  margin-top: 13.5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+main .info .bg .container .location .adress {
+  margin-right: 6.5%;
+}
+
+main .info .bg .container .location .adress p {
+  padding-left: 2%;
+}
+
+main .info .bg .container .location h3 {
+  margin-bottom: 18%;
+  font-family: 'Merienda One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 130%;
+  color: #000000;
+}
+
+main .info .bg .container .location p {
+  font-family: 'Heebo';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 140%;
+  color: #828282;
+}
+
+footer {
+  background: #5ED4BF;
+}
+
+footer .container {
+  padding-top: 3%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .container img {
+  padding-bottom: 3%;
+  margin: 0 auto;
+}
+
+footer .container ul {
+  width: 50%;
+  padding-bottom: 3%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -webkit-column-gap: 33%;
+          column-gap: 33%;
+}
+
+footer .container ul li {
+  list-style-type: none;
+}
+
+footer .container ul li a {
+  text-decoration: none;
+  font-family: 'Heebo';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 29px;
+  color: #FFFFFF;
 }
 /*# sourceMappingURL=styles.css.map */
