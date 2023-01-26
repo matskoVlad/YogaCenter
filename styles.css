@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo&family=Merienda+One&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1296px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+header {
+  background: #5ED4BF;
+}
+
+header .container {
+  padding-top: 2%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 10% 1fr 30%;
+      grid-template-columns: 10% 1fr 30%;
+}
+
+header .container nav {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+}
+
+header .container nav ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -webkit-column-gap: 10%;
+          column-gap: 10%;
+}
+
+header .container nav ul li {
+  list-style-type: none;
+}
+
+header .container nav ul li a {
+  text-decoration: none;
+  font-family: 'Heebo';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 29px;
+  color: #FFFFFF;
+}
+
+main .about {
+  padding-top: 10%;
+  background: #5ED4BF;
+}
+
+main .about .container {
+  padding-bottom: 25%;
+  background: url(assets/girlyoga.png) no-repeat 69% 100%, url(assets/fon.png) no-repeat 47% 100%;
+}
+
+main .about .container h1 {
+  margin-bottom: 5%;
+  font-family: 'Merienda One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 130%;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+main .about .container p {
+  margin: 0 auto;
+  max-width: 759px;
+  font-family: 'Heebo';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.5);
+}
+/*# sourceMappingURL=styles.css.map */
